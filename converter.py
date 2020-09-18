@@ -68,7 +68,7 @@ def main(argv):
     if path.exists(outputPath):
             remove(outputPath)
             
-    with open(outputPath, 'a') as f:
+    with open(outputPath, 'a', encoding="utf-8") as f:
         print("┌", end="", file=f)
         for i in range((image.width * 2) + 1):
             print("─", end="", file=f)
